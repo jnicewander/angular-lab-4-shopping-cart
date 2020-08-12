@@ -1,1 +1,2 @@
+<app-product-form (onSubmit)='addProduct($event)'></app-product-form>
 <app-product-detail *ngFor='let product of products; index as i' [product]='product' (onDelete)='deleteProduct(product.id)'></app-product-detail>
