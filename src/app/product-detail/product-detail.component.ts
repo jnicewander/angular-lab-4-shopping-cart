@@ -8,10 +8,14 @@ import { Item } from '../interfaces/item';
 })
 export class ProductDetailComponent implements OnInit {
   @Input() product: Item;
-  
+  @Output() onDelete = new EventEmitter<void>();
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  delete() {
+    this.onDelete.emit();
   }
 
 }
