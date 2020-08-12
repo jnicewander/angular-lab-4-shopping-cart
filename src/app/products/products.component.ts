@@ -22,13 +22,20 @@ export class ProductsComponent implements OnInit {
     this.api.deleteItem(id).subscribe((res: Item) => {
       console.log(res);
       this.getAllItems();
-    })
+    });
+  }
+
+  addProduct(item: Item){
+    this.api.addItem(item).subscribe((res: Item) => {
+      console.log(res);
+      this.getAllItems();
+    });
   }
 
   getAllItems() { 
     this.api.getAllItems().subscribe((res: Item[]) => {
       this.products = res;
-    })
+    });
   }
 
 }
