@@ -11,10 +11,22 @@ export class ProductsComponent implements OnInit {
 
   constructor(private api: CartApiService) { }
   
-  products: Item;
+  products: Item[];
 
   ngOnInit(): void {
-    this.api.getAllItems().subscribe((res: Item) => {
+    this.getAllItems();
+  }
+
+  deleteProduct(id: number) {
+    console.log(id);
+    this.api.deleteItem(id).subscribe((res: Item) => {
+      console.log(res);
+      this.getAllItems();
+    })
+  }
+
+  getAllItems() { 
+    this.api.getAllItems().subscribe((res: Item[]) => {
       this.products = res;
     })
   }
