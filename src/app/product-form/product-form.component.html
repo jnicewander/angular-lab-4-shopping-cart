@@ -1,13 +1,13 @@
-<form>
-    <!-- product -->
+<form #addProductForm="ngForm" (ngSubmit)="submitForm(thisForm);">
+    
     <label for='product'>Product</label>
-    <input type='text' name='product' placeholder='Ugly Sweater' required='required'>
-    <!-- price -->
+    <input type='text' name='product' placeholder='Ugly Sweater' required='required' ngModel>
+    
     <label for='price'>Price</label>
-    <input type='number' min='1' step='any' required='required'>
-    <!-- quantity -->
+    <input type='number' min='1' step='any' required='required' ngModel>
+    
     <label for='quantity'>Quantity</label>
-    <input type='number' min='1' required='required'>
-    <!-- submit button -->
-    <button></button>
+    <input type='number' min='1' required='required' ngModel>
+    
+    <button>Add Product</button>
 </form>
