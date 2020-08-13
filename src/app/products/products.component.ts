@@ -12,6 +12,7 @@ export class ProductsComponent implements OnInit {
   constructor(private api: CartApiService) { }
   
   products: Item[];
+  show: boolean = false;
 
   ngOnInit(): void {
     this.getAllItems();
@@ -36,6 +37,10 @@ export class ProductsComponent implements OnInit {
     this.api.getAllItems().subscribe((res: Item[]) => {
       this.products = res;
     });
+  }
+
+  showForm() {
+    this.show = !this.show;
   }
 
 }
