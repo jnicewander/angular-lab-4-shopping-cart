@@ -1,0 +1,27 @@
+ul {
+    display: flex;
+    flex-direction: row;
+    max-width: 90vw;
+    margin: .5rem auto;
+}
+
+li {
+    margin-top: .8rem;
+}
+
+.col-1 {
+    flex-basis: 40%;
+}
+
+.col-3, .col-4 {
+    flex-basis: 10%;
+    text-align: center;
+}
+
+.col-2, .col-5 {
+    flex-basis: 20%;
+}
+
+.col-5 {
+    text-align: right;
+}
