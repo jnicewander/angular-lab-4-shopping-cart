@@ -1,0 +1,30 @@
+.modal-container {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-height: 90%;
+    margin: auto;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: white;
+}
+
+input {
+    margin: .5rem 0;
+    padding: .5rem;
+    border-radius: 5px;
+}
+
+.btn-add {
+    margin-top: 1rem;
+    padding: .5rem;
+}
