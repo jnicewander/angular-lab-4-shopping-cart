@@ -3,10 +3,8 @@ ul {
     flex-direction: row;
     max-width: 90vw;
     margin: .5rem auto;
-}
-
-li {
-    margin-top: .8rem;
+    padding: .5rem;
+    border: 1px solid grey;
 }
 
 .col-1 {
