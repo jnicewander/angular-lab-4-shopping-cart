@@ -4,7 +4,9 @@
     position: fixed;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    z-index: 2;
 }
 
 form {
@@ -28,3 +30,9 @@ input {
     margin-top: 1rem;
     padding: .5rem;
 }
+
+@media only screen and (min-width: 1024px) {
+    form {
+        width: 50vw;
+    }
+  }
