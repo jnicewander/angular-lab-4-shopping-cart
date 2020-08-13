@@ -1,16 +1,17 @@
 <div class="modal-container">
-        <form #addProductForm="ngForm" (ngSubmit)="submitForm(addProductForm);">
-            
-            <label for='product'>Product</label>
-            <input type='text' name='product' placeholder='Ugly Sweater' required='required' ngModel>
-            
-            <label for='price'>Price</label>
-            <input type='number' name='price' min='1' step='any' required='required' ngModel>
-            
-            <label for='quantity'>Quantity</label>
-            <input type='number' name='quantity' min='1' required='required' ngModel>
-            
-            <button class='btn-add'>Add Product</button>
-        </form>
+
+    <form #addProductForm="ngForm" (ngSubmit)="submitForm(addProductForm);">
+        
+        <label for='product'>Product</label>
+        <input type='text' name='product' placeholder='Ugly Sweater' required='required' ngModel>
+        
+        <label for='price'>Price</label>
+        <input type='number' name='price' min='1' step='any' placeholder='19.99' required='required' ngModel>
+        
+        <label for='quantity'>Quantity</label>
+        <input type='number' name='quantity' min='1' placeholder='2' required='required' ngModel>
+        
+        <button class='btn-add'>Add Product</button>
+    </form>
 
 </div>
