@@ -1,0 +1,9 @@
+/* host targets this components parent element and applies styles to it */
+.heading {
+    margin: 0 auto;
+    text-align: center;   
+}
+
+button {
+    width: 90vw;
+}

@@ -1,4 +1,8 @@
-<h1>Shopping Cart</h1>
-<button (click)='showForm()'>Add</button>
+<div class='heading'>
+    <h1>Shopping Cart</h1>
+    <div>
+        <button (click)='showForm()'>Add</button>
+    </div>
+</div>
 <app-product-form (onSubmit)='addProduct($event)' *ngIf='show'></app-product-form>
 <app-product-detail *ngFor='let product of products; index as i' [product]='product' (onDelete)='deleteProduct(product.id)'></app-product-detail>
