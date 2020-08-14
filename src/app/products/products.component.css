@@ -1,7 +1,7 @@
 .heading {
-    margin: 0 auto;
+    margin: 1rem auto;
     text-align: center;
-    padding-top: 1rem;   
+    padding-top: 1.5rem;   
 }
 
 h1 {
@@ -15,11 +15,14 @@ h1 {
 button {
     padding: .5rem;
     width: 90vw;
+    font-size: 1.2rem;
+    
 }
 
 ul {
     display: flex;
     flex-direction: row;
+    font-size: 1.2rem;
     max-width: 90vw;
     margin: 0 auto;
     padding: .5rem;
