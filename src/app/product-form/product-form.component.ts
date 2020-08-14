@@ -25,4 +25,8 @@ export class ProductFormComponent implements OnInit {
     addProductForm.reset();
     this.hideForm.emit()
   }
+
+  closeForm() {
+    this.hideForm.emit();
+  }
 }
