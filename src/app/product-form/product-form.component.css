@@ -9,15 +9,32 @@
     z-index: 2;
 }
 
+.header {
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    max-height: 90%;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.header-two {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-close {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    border-radius: 50%;
+}
+
 form {
     display: flex;
     flex-direction: column;
-    width: 90%;
-    max-height: 90%;
     margin: auto;
-    padding: 2rem;
-    border-radius: 10px;
-    background-color: white;
 }
 
 input {
@@ -32,7 +49,12 @@ input {
 }
 
 @media only screen and (min-width: 1024px) {
-    form {
+
+    .header {
         width: 50vw;
     }
+/* 
+    form {
+        width: 50vw;
+    } */
   }
