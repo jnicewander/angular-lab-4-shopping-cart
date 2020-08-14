@@ -8,6 +8,7 @@ import { Item } from '../interfaces/item';
   styleUrls: ['./product-form.component.css']
 })
 export class ProductFormComponent implements OnInit {
+  @Output() hideForm = new EventEmitter<void>();
   @Output() onSubmit = new EventEmitter<Item>();
 
   constructor() { }
@@ -22,5 +23,6 @@ export class ProductFormComponent implements OnInit {
       quantity: addProductForm.value.quantity
     });
     addProductForm.reset();
+    this.hideForm.emit()
   }
 }
