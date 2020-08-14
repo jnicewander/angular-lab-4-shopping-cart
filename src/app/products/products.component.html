@@ -1,7 +1,7 @@
 <div class='heading'>
     <h1>Shopping Cart</h1>
     <div class='btn-container'>
-        <button (click)='showForm()'>Add</button>
+        <button (click)='showForm()'>Add New Product</button>
     </div>
 </div>
 <ul>
@@ -22,4 +22,4 @@
     </li>
 </ul>
 <app-product-detail *ngFor='let product of products; index as i' [product]='product' (onDelete)='deleteProduct(product.id)'></app-product-detail>
-<app-product-form (onSubmit)='addProduct($event)' *ngIf='show'></app-product-form>
+<app-product-form (onSubmit)='addProduct($event)' *ngIf='show' (hideForm)='show = false'></app-product-form>
