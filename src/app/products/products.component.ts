@@ -36,6 +36,9 @@ export class ProductsComponent implements OnInit {
   getAllItems() { 
     this.api.getAllItems().subscribe((res: Item[]) => {
       this.products = res;
+      this.products.forEach(element => {
+        element.price = parseFloat((element.price * .01).toFixed(2));
+      })
     });
   }
 
