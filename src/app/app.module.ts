@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { ProductsComponent } from './products/products.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { ProductFormComponent } from './product-form/product-form.component';
+import { ToCurrencyPipe } from './to-currency.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductsComponent,
     ProductDetailComponent,
-    ProductFormComponent
+    ProductFormComponent,
+    ToCurrencyPipe
   ],
   imports: [
     BrowserModule,
