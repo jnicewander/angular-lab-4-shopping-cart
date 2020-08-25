@@ -3,7 +3,7 @@
         {{ product.product }}
     </li>
     <li class='col-2'>
-        $ {{ product.price }}
+        $ {{ product.price | toCurrency }}
     </li>
     <li class='col-3'>
         {{ product.quantity }}
